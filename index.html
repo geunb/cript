@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Decodificador</title>
+<link rel="stylesheet" href="css/tags.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/resp.css">
+<script src="js/cript-decript.js"></script>
+<script src="js/cript.js"></script>
+<script src="js/copy.js"></script>
+<script src="js/txt-area.js"></script>
+</head>
+
+<body>
+<main class="container">
+<section class="conteudo">
+<img class="logo-alura" src="img/alura.svg" alt="Logo Alura">
+<form>
+<textarea id="texto-principal" type="text" placeholder="Digite o texto aqui"></textarea>
+<div>
+<div class="alerta">
+<img src="img/warning.svg">
+<span>Digite somente letras minúsculas e sem acento.</span>
+</div>
+<div class="botoes">
+<button class="bt-cripto apresentacao__botao__cripto" id="criptografar">Criptografa.</button>
+<button class="bt-descripto apresentacao__botao__descripto" id="descriptografar">Descriptografa.</button>
+</div>
+</div>
+</form>
+</section>
+<div class="criptografia">
+<div class="retorno-branco">
+<img src="img/girl.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada">
+<h3 class="titulo-sem-retorno">A sua mensagem não foi encontrada.</h3>
+<p>Digite o texto ou a palavra para criptografar ou descriptografar.</p>
+</div>
+<div class="texto-criptografado d-none">
+<p></p>
+<button class="bt-copiar apresentacao__botao__copiar" id="copiar" onclick="copiarTexto()">Copiar.</button>
+</div>
+</div>
+</main>
+</body>
+
+</html>
